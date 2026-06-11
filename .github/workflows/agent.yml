@@ -1,0 +1,35 @@
+name: agent-tick
+
+# Runs the agent as a cron job (NOT realtime). Each run = one pass: restore
+# state from Supabase Storage, evaluate rules / planner / close, sync the
+# dashboard, persist state back. The code itself no-ops outside its ET windows,
+# so the wide UTC schedule below safely covers both EST and EDT.
+on:
+  schedule:
+    - cron: "*/5 12-21 * * 1-5" # every 5 min, 12:00-21:59 UTC, Mon-Fri
+  workflow_dispatch: {} # manual trigger from the Actions tab
+
+# Never let two runs touch the state file at once: queue, don't overlap.
+concurrency:
+  group: agent-tick
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      - run: bun install --frozen-lockfile
+      - run: bun run tick
+        env:
+          EXECUTION_MODE: notify
+          INITIAL_CAPITAL_USD: "100"
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WALLBIT_API_KEY: ${{ secrets.WALLBIT_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}

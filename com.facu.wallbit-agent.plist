@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.facu.wallbit-agent</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/facundolopezscala/.bun/bin/bun</string>
+    <string>run</string>
+    <string>src/index.ts</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/facundolopezscala/coding-repos/trading-agent</string>
+
+  <key>KeepAlive</key>
+  <true/>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>15</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/facundolopezscala/coding-repos/trading-agent/logs/launchd-stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/facundolopezscala/coding-repos/trading-agent/logs/launchd-stderr.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/facundolopezscala/.bun/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+</dict>
+</plist>

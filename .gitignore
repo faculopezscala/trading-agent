@@ -1,0 +1,13 @@
+node_modules/
+data/
+logs/
+references/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+dashboard/.next/
+dashboard/node_modules/
+dashboard/.vercel/
+dashboard/.env*.local
