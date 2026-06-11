@@ -2,9 +2,9 @@
 // with the same capital as the agent:
 // - S&P 500 (SPY): the boring real benchmark.
 // - "Cartera Adorni": same capital thrown into Bitcoin on day 1.
-// - "Bot Costiorto": the scam promise, +100% compounded monthly. Pure math.
+// - "Bot Cositorto": the scam promise, +100% compounded monthly. Pure math.
 //
-// The three rivals are drawn from real Yahoo history (plus math for Costiorto),
+// The three rivals are drawn from real Yahoo history (plus math for Cositorto),
 // so the chart has life even before the agent has published a single day. When
 // the agent has no snapshots yet we anchor to a short "preview" window.
 
@@ -125,7 +125,7 @@ export function buildSeries(opts: {
   const adorni: Series = {
     key: "adorni",
     name: "Cartera Adorni",
-    sub: "$150 al Bitcoin en 2013, un genio",
+    sub: "$100 al Bitcoin en 2013, un genio",
     color: "#d9831f",
     fantasy: true,
     points: [
@@ -137,7 +137,7 @@ export function buildSeries(opts: {
   const costiorto = costiortoSeries(
     {
       key: "costiorto",
-      name: "Bot Costiorto",
+      name: "Bot Cositorto",
       sub: "duplica tu plata mes a mes",
       color: "#1f8a4c",
       dash: "6 5",

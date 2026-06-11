@@ -88,7 +88,7 @@ export default async function Page() {
       <section className="race-section">
         <div className="section-head">
           <h2>Cómo voy contra el resto</h2>
-          <span className="section-note">todos largan con $150 hoy... menos Adorni</span>
+          <span className="section-note">todos largan con $100 hoy... menos Adorni</span>
         </div>
         <div className="paper chart">
           <EquityChart series={series} capital={capital} />
@@ -96,8 +96,8 @@ export default async function Page() {
         <Race standings={board} />
         <p className="fineprint">
           El <strong>S&amp;P 500</strong> es la jugada aburrida y sensata, el rival a vencer. El{" "}
-          <strong>Bot Costiorto</strong> te promete duplicar la plata mes a mes: por lejos lo más prudente, ¿qué puede
-          salir mal? Y la <strong>Cartera Adorni</strong> directamente metió $150 al Bitcoin en 2013, así que arranca
+          <strong>Bot Cositorto</strong> te promete duplicar la plata mes a mes: por lejos lo más prudente, ¿qué puede
+          salir mal? Y la <strong>Cartera Adorni</strong> directamente metió $100 al Bitcoin en 2013, así que arranca
           arriba de todo, en otra galaxia. Un genio.
           {noDataYet && " Mi bot todavía no largó, pero los rivales ya están corriendo."}
         </p>

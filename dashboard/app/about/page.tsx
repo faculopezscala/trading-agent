@@ -54,7 +54,7 @@ export default function About() {
           genio que, según cuenta la leyenda, metió todo al Bitcoin allá por 2013. Un crack adelantado a su época.
         </li>
         <li>
-          <strong>El Bot Costiorto.</strong> Por lejos la decisión más prudente de todas: te duplica la plata mes a mes,
+          <strong>El Bot Cositorto.</strong> Por lejos la decisión más prudente de todas: te duplica la plata mes a mes,
           sin falla, para siempre. ¿Qué puede salir mal?
         </li>
       </ul>

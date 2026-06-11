@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "Dejé un bot de IA manejando plata real en Wallbit. Compite contra el S&P 500, contra Bitcoin (la Cartera Adorni) y contra un bot trucho que promete duplicar la plata cada mes. Gane o pierda, todo público.",
   openGraph: {
     title: "Timberbot - un bot de IA tradeando solo",
-    description: "Mi bot vs el S&P 500, vs Bitcoin y vs el Bot Costiorto. En vivo.",
+    description: "Mi bot vs el S&P 500, vs Bitcoin y vs el Bot Cositorto. En vivo.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Timberbot - un bot de IA tradeando solo",
-    description: "Mi bot vs el S&P 500, vs Bitcoin y vs el Bot Costiorto. En vivo.",
+    description: "Mi bot vs el S&P 500, vs Bitcoin y vs el Bot Cositorto. En vivo.",
   },
 };
 

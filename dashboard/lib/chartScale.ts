@@ -2,7 +2,7 @@
 //
 // The bottom band uses a real linear scale so the agent and the S&P (small
 // moves) stay legible. The top band compresses the "fantasy" lines (Cartera
-// Adorni and Bot Costiorto) logarithmically so they can shoot up off the
+// Adorni and Bot Cositorto) logarithmically so they can shoot up off the
 // charts without flattening everyone else. Adorni grows fastest, so it sits
 // on top, asymptotic.
 

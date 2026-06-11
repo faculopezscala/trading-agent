@@ -5,7 +5,7 @@ import { getBtcSpot, getSnapshots, getSpyHistory, getStatus } from "./data";
 
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
-export const ogAlt = "Timberbot: mi bot de IA vs el S&P 500, Bitcoin y el Bot Costiorto";
+export const ogAlt = "Timberbot: mi bot de IA vs el S&P 500, Bitcoin y el Bot Cositorto";
 
 // Inner SVG canvas for the chart (left side of the card).
 const CW = 760;
