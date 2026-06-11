@@ -1,5 +1,6 @@
 name: agent-tick
 
+# Tick agent on a cron schedule (see docs in src/tick.ts).
 # Runs the agent as a cron job (NOT realtime). Each run = one pass: restore
 # state from Supabase Storage, evaluate rules / planner / close, sync the
 # dashboard, persist state back. The code itself no-ops outside its ET windows,
